@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #D20024;
+    --primary-color-transparent: rgba(210, 0, 36, 0.8);
+    --secondary-solor: #1E1F29;
+    --primary-font: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: 'Montserrat';
+}
+
+.header {
+    background-color: var(--secondary-solor);
+    color: #FFF;
+}
+
+.header .num > :first-child {
+    width: 80%;
+    background-color: rgb(9, 9, 76);
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+/* Num partie gauche */
+
+.header .num > :first-child > :first-child {
+    display: flex;
+    align-items: center;
+}
+
+.header .num > :first-child > :first-child > .tel {
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.header .num > :first-child > :first-child > .tel:first-child {
+    margin-left: 2rem;
+}
+
+.header .num > :first-child > :first-child > .tel > i {
+    margin-right: 1rem;
+    font-size: 0.8rem;
+    color: var(--primary-color);
+    opacity: 0.8;
+}
+
+/* Num partie droite */
+
+.header .num > :first-child > :nth-child(2) {
+    display: flex;
+    align-items: center;
+}
+
+.header .num > :first-child > :nth-child(2) > div {
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.header .num > :first-child > :nth-child(2) > div > i {
+    font-size: 0.8rem;
+    color: var(--primary-color);
+    opacity: 0.8;
+    margin-right: 1rem;
+}
+
+/* Partie bar de recherche */
+
+.header > :nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+}
+
+
+.header > :nth-child(2) > .big-title {
+    display: flex;
+    align-items: flex-end;
+}
+
+.header > :nth-child(2) > .big-title div {
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-bottom: 0.4rem;
+    margin-left: 0.5rem;
+}
+
+.header >:nth-child(2) > .searchbar {
+    width: 50%;
+    border-radius: 3rem;
+    display: flex;
+}
+
+.header >:nth-child(2) > .searchbar > :nth-child(1) {
+    display: flex;
+    align-items: center;
+    background-color: #FFF;
+    color: var(--secondary-solor);
+    padding-left: 1rem;
+    border-right: 0.5px solid rgba(0, 0, 0, 0.2);
+    border-top-left-radius: 4rem;
+    border-bottom-left-radius: 4rem;
+}
+
+.header >:nth-child(2) > .searchbar input {
+    width: 60%;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    outline: none;
+}
+
+.header >:nth-child(2) > .searchbar .btn-search {
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    border-top-right-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+}
+
+.header > :nth-child(2) > :nth-child(3) {
+    display: flex;
+    align-items: center;
+}
+
+.header > :nth-child(2) > :nth-child(3) > :first-child {
+    margin-right: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.header > :nth-child(2) > :nth-child(3) > :first-child > :nth-child(2) {
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    width: 1.2rem;
+    height: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -0.6rem;
+    right: 1.8rem;
+    font-size: 0.8rem;
+}
+
+.header > :nth-child(2) > :nth-child(3) > :nth-child(2) {
+    text-align: center;
+    position: relative;
+}
+
+
+.header > :nth-child(2) > :nth-child(3) > :nth-child(2) > :nth-child(2) {
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    width: 1.2rem;
+    height: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -0.8rem;
+    right: 1rem;
+    font-size: 0.8rem;
+}
+
+.navbar {
+    border-bottom: 1px solid black;
+    padding: 1rem 0;
+}
+
+.navbar .navbar-item {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.navbar .navbar-item > div {
+    margin-right: 2.5rem;
+}
+
+.navbar .navbar-item > :first-child {
+    color: var(--primary-color);
+    font-weight: 600;
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.main > div {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+.main > div > :first-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main >  div > :first-child > div {
+    width: 32%;
+    height: 200px;
+    position: relative;
+    color: #FFF;
+}
+
+.main > div > :first-child > div > :nth-child(1) {
+    width: 100%;
+    background-position: top;
+    background-size: cover;
+    height: 220px;
+}
+
+.main > div > :first-child > div > .img1 {
+    background-image: url('img/pc5.jpeg');
+}
+
+.main > div > :first-child > div > .img2 {
+    background-image: url('img/casque.jpeg');
+}
+
+.main > div > :first-child > div > .img3 {
+    background-image: url('img/cam2.jpeg');
+}
+
+.main >  div > :first-child > div > .hover {
+    border-top: 220px solid var(--primary-color-transparent);
+    border-right: 240px solid transparent;
+    position: relative;
+    z-index: 1;
+    top: -110%;
+    left: 0;
+}
+
+.main >  div > :first-child > div > :nth-child(3) {
+    width: 70%;
+    height: 220px;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    font-size: 1.3rem;
+    font-weight: 900;
+    padding: 1rem 2rem;
+}
+
+.main >  div > :first-child > div > :nth-child(3) > div {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.main >  div > :first-child > div > :nth-child(3) > div > * {
+    font-size: 0.8rem;
+    opacity: 0.8;
+    margin-right: 0.5rem;
+}
+
+.main > div .new-products {
+    margin-top: 5rem;
+}
+
+.main > div .new-products .header-product {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main > div .new-products .header-product > .categories {
+    display: flex;
+}
+
+.main > div .new-products .header-product > .categories > div {
+    margin-right: 2rem;
+    font-weight: 500;
+}
+
+.main > div .new-products .header-product > .categories > :first-child {
+    color: var(--primary-color);
+    font-weight: 600;
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.main > div .new-products > .products {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.main > div .new-products > .products .product {
+    width: 24%;
+    border: 0.5px solid rgba(128, 128, 128, 0.5);
+    margin: 2rem 0;
+}
+
+.main > div .new-products > .products .product > :first-child{
+    width: 90%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    background-color: transparent;
+}
+
+.main > div .new-products > .products .product img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main > div .new-products > .products .product > :nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.main > div .new-products > .products .product > :nth-child(2) > :first-child {
+    color: gray;
+    font-weight: 500;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+
+.main > div .new-products > .products .product > :nth-child(2) > :nth-child(2) {
+    font-weight: 700;
+    font-size: 1.2rem;   
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.main > div .new-products > .products .product .price {
+    display: flex;
+    align-items: center;
+    color: var(--primary-color);
+    font-weight: 600;
+    justify-content: center;
+}
+
+.main > div .new-products > .products .product .price > :first-child {
+    font-size: 1.3rem;
+}
+
+.main > div .new-products > .products .product .price > :nth-child(2) {
+    text-decoration: line-through;
+    color: gray;
+    font-weight: 500;
+    font-size: 0.9rem;
+    align-self: flex-end;
+    margin-left: 0.5rem;
+}
+
+.main > div .new-products > .products .product > :nth-child(2) > :nth-child(4) {
+    border: 0.1px solid rgba(128, 128, 128, 0.2);
+    margin-top: 2rem;
+}
+
+.main > div .new-products > .products .product > :nth-child(2) > :nth-child(5) {
+    align-self: center;
+    position: relative;
+    top: -1.6rem;
+}
+
+.main > div .new-products > .products .product > :nth-child(2) > :nth-child(5) > i {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin: 1rem 0;
+}
+
+.main > div .new-products > .products .product > :nth-child(3) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.main > div .new-products > .products .product > :nth-child(3) > :nth-child(1) {
+    margin-right: 1.5rem;
+    opacity: 0.5;
+}
+
+.main > div .new-products > .products .product > :nth-child(3) > :nth-child(2) {
+    margin-right: 1.5rem;
+}
