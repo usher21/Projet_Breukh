@@ -367,16 +367,7 @@ body {
     margin-left: 0.5rem;
 }
 
-.main > div .new-products > .products .product > :nth-child(2) > :nth-child(4)::before {
-    content: "";
-    display: inline-block;
-    width: 20%;
-    border: 0.5px solid rgba(128, 128, 128, 0.3);
-    position: relative;
-    top: -0.5rem;
-    left: 0;
-}
-
+.main > div .new-products > .products .product > :nth-child(2) > :nth-child(4)::before, 
 .main > div .new-products > .products .product > :nth-child(2) > :nth-child(4)::after {
     content: "";
     display: inline-block;
