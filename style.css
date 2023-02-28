@@ -116,6 +116,12 @@ body {
     border-bottom-left-radius: 4rem;
 }
 
+.header >:nth-child(2) > .searchbar > :nth-child(1) > img {
+    width: 2rem;
+    height: 2rem;
+    opacity: 0.5;
+}
+
 .header >:nth-child(2) > .searchbar input {
     width: 60%;
     padding: 0.5rem 1.5rem;
